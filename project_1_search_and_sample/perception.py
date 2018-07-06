@@ -161,6 +161,5 @@ def perception_step(Rover):
     # Update Rover pixel distances and angles
 
 	Rover.nav_dists, Rover.nav_angles = to_polar_coords(xpix_ground, ypix_ground) 
-    print "hello"
 
 	return Rover
