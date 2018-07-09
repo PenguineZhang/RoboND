@@ -21,7 +21,7 @@ def decision_step(Rover):
 			if len(Rover.nav_angles) >= Rover.stop_forward:  
 				# If mode is forward, navigable terrain looks good 
 				# and velocity is below max, then throttle 
-				if len(Rover.vision_image[:,:,1].nonzero()[0]) > 10:
+				if len(Rover.vision_image[:,:,1].nonzero()[0]) > 15:
 					Rover.mode = 'pickup'
 
 				else:
@@ -34,6 +34,8 @@ def decision_step(Rover):
 					Rover.brake = 0
 					# # Set steering to average angle clipped to the range +/- 15
 					Rover.steer = np.clip(np.mean(Rover.nav_angles * 180/np.pi), -15, 15)
+
+
 			# If there's a lack of navigable terrain pixels then go to 'stop' mode
 			elif len(Rover.nav_angles) < Rover.stop_forward:
 				# Set mode to "stop" and hit the brakes!
@@ -41,9 +43,6 @@ def decision_step(Rover):
 				# Set brake to stored brake value
 				Rover.brake = Rover.brake_set
 				Rover.steer = 0
-				Rover.mode = 'stop'
-			
-			elif abs(Rover.vel) < 0.05 and Rover.throttle != 0:
 				Rover.mode = 'stop'
 
 		# If we're already in "stop" mode then make different decisions
@@ -77,25 +76,19 @@ def decision_step(Rover):
 			print 'in pickup mode'
 			
 			rock_vision_x, rock_vision_y = Rover.vision_image[:,:,1].nonzero()
-
 			angle_x = Rover.vision_image[:,:,1].shape[0] - np.mean(rock_vision_x)
 			angle_y = Rover.vision_image[:,:,1].shape[1]/2 - np.mean(rock_vision_y)
 
 			angle = np.arctan2(angle_y, angle_x) * 180 / np.pi
 
 			if np.isnan(angle):
-				print 'angle is nan, return to forward'
+				print 'angle is nan'
 
-			elif angle > 5:
-				print 'turning left'
+			elif abs(angle) > 5:
 				Rover.throttle = 0
 				Rover.brake = 0
-				Rover.steer = 15
-			elif angle < -5:
-				print 'turn right'
-				Rover.throttle = 0
-				Rover.brake = 0
-				Rover.steer = -15
+				Rover.steer = np.clip(angle, -15, 15)
+
 			else:
 				print 'angle aligned'
 				Rover.steer = 0

@@ -149,10 +149,6 @@ def perception_step(Rover):
 	x_pix_rock_world, y_pix_rock_world = pix_to_world(xpix_rock, ypix_rock, xpos, ypos, yaw, 200, 10)
 	x_pix_ground_world, y_pix_ground_world = pix_to_world(xpix_ground, ypix_ground, xpos, ypos, yaw, 200, 10)
     
-	# if len(x_pix_rock_world) != 0:
-	# 	Rover.samples_pos += (y_pix_rock_world, x_pix_rock_world)
-	# 	Rover.samples_located += 1
-
     # 7) Update Rover worldmap (to be displayed on right side of screen)
         # Example: Rover.worldmap[obstacle_y_world, obstacle_x_world, 0] += 1
         #          Rover.worldmap[rock_y_world, rock_x_world, 1] += 1
