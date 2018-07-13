@@ -11,20 +11,23 @@ def color_thresh(img, rgb_thresh=(160, 160, 160)):
     # Require that each pixel be above all three threshold values in RGB
     # above_thresh will now contain a boolean array with "True"
     # where threshold was met
-    ground_thresh = (img[:,:,0] > rgb_thresh[0]) \
-                & (img[:,:,1] > rgb_thresh[1]) \
-                & (img[:,:,2] > rgb_thresh[2])
+    ground_thresh = (img[:,:,0] >= rgb_thresh[0]) \
+                & (img[:,:,1] >= rgb_thresh[1]) \
+                & (img[:,:,2] >= rgb_thresh[2])
     # Index the array of zeros with the boolean array and set to 1
     ground_select[ground_thresh] = 1
     
     # rock (yellow objects) threshold
-    rock_thresh = (img[:,:,0] > 140) & (img[:,:,1] > 110) & (img[:,:,2] < 50)
+
+    rock_thresh = (100 <= img[:,:,0]) & (img[:,:,0] <= 245) & \
+    			  (90 <= img[:,:,1]) & (img[:,:,1] <= 245) & \
+    			  (0 <= img[:,:,2]) & (img[:,:,2] <= 60)
     rock_select[rock_thresh] = 1
     
     # obstacle (wall/mountain) threshold
-    obstacle_thresh = (0 != img[:,:,0]) & (img[:,:,0] < 160) & \
-                  (0 != img[:,:,1]) & (img[:,:,1] < 160) & \
-                  (0 != img[:,:,2]) & (img[:,:,2] < 160)
+    obstacle_thresh = (img[:,:,0] <= 160) & \
+                  (img[:,:,1] <= 160) & \
+                  (img[:,:,2] <= 160)
     obstacle_select[obstacle_thresh] = 1
     
     print np.sum(rock_select.flatten())
@@ -156,6 +159,9 @@ def perception_step(Rover):
 	Rover.worldmap[y_pix_obstacle_world, x_pix_obstacle_world, 0] += 1
 	Rover.worldmap[y_pix_rock_world, x_pix_rock_world, 1] += 1
 	Rover.worldmap[y_pix_ground_world, x_pix_ground_world, 2] += 1
+
+	print "sample location: "
+	print Rover.worldmap[:,:,1].nonzero()[0]
     
     # 8) Convert rover-centric pixel positions to polar coordinates
     # Update Rover pixel distances and angles
