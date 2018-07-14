@@ -118,3 +118,8 @@ Rover.mode == 'unstuck':
 ```
 1. Rover reaches complete stop and attempts to move backward straight.
 2. When Rover backs up for 3 seconds, it should be able to pass obstacles.
+
+### Improvements
+1. Develop robust criteria in `decision_step()` to navigate the Rover to pick the rocks.
+2. Set various throttle values depends on how open the space is.
+3. Apply machine learning techniques to identify rocks instead of hard-code RGB threshold values.
