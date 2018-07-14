@@ -12,131 +12,109 @@ The simulation and the autonomy development are inspired by the [NASA sample ret
 
 ### Notebook Analysis
 ## 1. Image processing
-`color_thresh` function defined as follows:
+`color_thresh` function uses hard-coded values to define RGB boundaries in order to identify target pixels for navigatable terrain, obstacles, and rock:
 ```
-# Identify pixels above the threshold
-# Threshold of RGB > 160 does a nice job of identifying ground pixels only
-def color_thresh(img, rgb_thresh=(160, 160, 160)):
-    # Create an array of zeros same xy size as img, but single channel
-    ground_select = np.zeros_like(img[:,:,0])
-    obstacle_select = np.zeros_like(img[:,:,0])
-    rock_select = np.zeros_like(img[:,:,0])
-    # Require that each pixel be above all three threshold values in RGB
-    # above_thresh will now contain a boolean array with "True"
-    # where threshold was met
-    ground_thresh = (img[:,:,0] >= rgb_thresh[0]) \
-                & (img[:,:,1] >= rgb_thresh[1]) \
-                & (img[:,:,2] >= rgb_thresh[2])
-    # Index the array of zeros with the boolean array and set to 1
-    ground_select[ground_thresh] = 1
-    
-    # rock (yellow objects) threshold
-    rock_thresh = (100 <= img[:,:,0]) & (img[:,:,0] <= 245) & \
+ground_thresh = (img[:,:,0] >= rgb_thresh[0]) & (img[:,:,1] >= rgb_thresh[1]) & (img[:,:,2] >= rgb_thresh[2])
+rock_thresh = (100 <= img[:,:,0]) & (img[:,:,0] <= 245) & \
     			  (90 <= img[:,:,1]) & (img[:,:,1] <= 245) & \
     			  (0 <= img[:,:,2]) & (img[:,:,2] <= 60)
-    rock_select[rock_thresh] = 1
-    
-    # obstacle (wall/mountain) threshold
-    obstacle_thresh = (img[:,:,0] < 140) & \
-                  (img[:,:,1] < 140) & \
-                  (img[:,:,2] < 140)
-    obstacle_select[obstacle_thresh] = 1
-    
-    # Return the binary image
-    return ground_select, obstacle_select, rock_select
+bstacle_thresh = (img[:,:,0] < 140) & (img[:,:,1] < 140) & (img[:,:,2] < 140)
 ```
-In this function, ground has already been identified as when the RGB pixel values are greater than (160, 160, 160), respectively. For the case of rock and obstacle, the RGB values for rock range from([100, 245], [90, 245], [0, 60]), respectively, while the RGB values for obstacle are ([0, 140], [0, 140], [0, 140]), respectively. The result are shown after homography transform below:
+By using this RGB thresholding values, it's able to produce the following thresholded image:
 
 ![color_thresh][image1]
 
 Obstacles include the true obstacles appeared in the image and black pixels that do not appear in the image (two black triangles on the side of the warped image).
 
 ## 2. Mapping
+`process_image(img)` consists of a series of actions to acquire warped image and update the worldmap. It first defines the boundary for warping:
 ```
-# Apply the above functions in succession and update the Rover state accordingly
-def perception_step(Rover):
-    # Perform perception steps to update Rover()
-    # TODO: 
-    # NOTE: camera image is coming to you in Rover.img
-
-	img = Rover.img
-	xpos = Rover.pos[0]
-	ypos = Rover.pos[1]
-	yaw = Rover.yaw
-
-    # 1) Define source and destination points for perspective transform
-	source, destination = define_box(img)
-
-    # 2) Apply perspective transform
-	warped = perspect_transform(img, source, destination)
-
-    # 3) Apply color threshold to identify navigable terrain/obstacles/rock samples
-	ground_select, obstacle_select, rock_select = color_thresh(warped)
-
-    # 4) Update Rover.vision_image (this will be displayed on left side of screen)
-	Rover.vision_image[:,:,0] = obstacle_select
-	Rover.vision_image[:,:,1] = rock_select
-	Rover.vision_image[:,:,2] = ground_select
-
-    # 5) Convert map image pixel values to rover-centric coords
-	xpix_obstacle, ypix_obstacle = rover_coords(obstacle_select)
-	xpix_rock, ypix_rock = rover_coords(rock_select)
-	xpix_ground, ypix_ground = rover_coords(ground_select)
-
-    # 6) Convert rover-centric pixel values to world coordinates
-	x_pix_obstacle_world, y_pix_obstacle_world = pix_to_world(xpix_obstacle, ypix_obstacle, xpos, ypos, yaw, 200, 10)
-	x_pix_rock_world, y_pix_rock_world = pix_to_world(xpix_rock, ypix_rock, xpos, ypos, yaw, 200, 10)
-	x_pix_ground_world, y_pix_ground_world = pix_to_world(xpix_ground, ypix_ground, xpos, ypos, yaw, 200, 10)
-    
-    # 7) Update Rover worldmap (to be displayed on right side of screen)
-	Rover.worldmap[y_pix_obstacle_world, x_pix_obstacle_world, 0] += 1
-	Rover.worldmap[y_pix_rock_world, x_pix_rock_world, 1] += 1
-	Rover.worldmap[y_pix_ground_world, x_pix_ground_world, 2] += 1
-    
-    # 8) Convert rover-centric pixel positions to polar coordinates
-    # Update Rover pixel distances and angles
-	Rover.nav_dists, Rover.nav_angles = to_polar_coords(xpix_ground, ypix_ground) 
-
-	return Rover
+dst_size = 5 
+bottom_offset = 6
+source = np.float32([[14, 140], [301 ,140],[200, 96], [118, 96]])
+destination = np.float32([[image.shape[1]/2 - dst_size, image.shape[0] - bottom_offset],
+                  [image.shape[1]/2 + dst_size, image.shape[0] - bottom_offset],
+                  [image.shape[1]/2 + dst_size, image.shape[0] - 2*dst_size - bottom_offset], 
+                  [image.shape[1]/2 - dst_size, image.shape[0] - 2*dst_size - bottom_offset],
 ```
-
-For each image generated from the simulator, the function first loads the image and Rover's pose information, then transforms and translate the image to Rover-centric and world coordinate frame. The code is broken down as follows:
+The source and destination are later fed into `perspect_transform` to obtain the warped image.
 
 ```
 source, destination = define_box(img)
 warped = perspect_transform(img, source, destination)
 ```
-When Rover's camera generates a new image, it must be transformed into top-down view using perspective transformation, as shown in Figure 1, which helps coordinate transform later in the code.
+The warped image is passed to `color_thresh` for target identification, which outputs three variables corresponding three targe regions on the image as mentioned in "Image processing" section. 
 
+Once the regions are identified, coordinate transforms are performed. The tranforms includes rover-centric and world frame coordinate transforms:
 ```
-ground_select, obstacle_select, rock_select = color_thresh(warped)
-Rover.vision_image[:,:,0] = obstacle_select
-Rover.vision_image[:,:,1] = rock_select
-Rover.vision_image[:,:,2] = ground_select
-``` 
-The warped image is thresholded into three regions: ground, obstacle, and rock using three thresholding RGB values. These regions are stored in Rover's vision_image attribute.
-
-```
+# convert image pixels to rover-centric coordinates
+xpix_ground, ypix_ground = rover_coords(ground_select)
 xpix_obstacle, ypix_obstacle = rover_coords(obstacle_select)
 xpix_rock, ypix_rock = rover_coords(rock_select)
-xpix_ground, ypix_ground = rover_coords(ground_select)
 
-x_pix_obstacle_world, y_pix_obstacle_world = pix_to_world(xpix_obstacle, ypix_obstacle, xpos, ypos, yaw, 200, 10)
-x_pix_rock_world, y_pix_rock_world = pix_to_world(xpix_rock, ypix_rock, xpos, ypos, yaw, 200, 10)
+# convert rover-centric pixels to world coordinates, given rover's pose information
 x_pix_ground_world, y_pix_ground_world = pix_to_world(xpix_ground, ypix_ground, xpos, ypos, yaw, 200, 10)
+x_pix_obstacle_world, y_pix_obstacle_world = pix_to_world(xpix_obstacle, ypix_obstacle, xpos, ypos, yaw, 200, 10)
+x_pix_rock_world, y_pix_rock_world = pix_to_world(xpix_rock, ypix_rock, xpos, ypos, yaw, 200, 10)    
 ```
-Once the three regions are identified, the pixels are translated into Rover-centric and world frame coordinates system given Rover's current pose information (x, y, yaw).
-
+Once the coordinate transformation is complete, one is able to update the worldmap:
 ```
-Rover.worldmap[y_pix_obstacle_world, x_pix_obstacle_world, 0] += 1
-Rover.worldmap[y_pix_rock_world, x_pix_rock_world, 1] += 1
-Rover.worldmap[y_pix_ground_world, x_pix_ground_world, 2] += 1
+data.worldmap[y_pix_ground_world, x_pix_ground_world, 0] += 1
+data.worldmap[y_pix_obstacle_world, x_pix_obstacle_world, 1] += 1
+data.worldmap[y_pix_rock_world, x_pix_rock_world, 2] += 1
 ```
-Rover's worldmap can be updated by using the calculated world frame coordinates of ground, obstacles, and rocks.
 
 ### Video Demo
 [Click Here](https://www.youtube.com/watch?v=ZW1d9I3rd2Y) for video demo. The simulation is run under 1920 x 1080 resolution and "Fantastic" graphics quality, giving 27 FPS. 
 
 ### Autonomous Navigation and Mapping
 ## 1. Perception step
-As mentioned in Noteboo
+`perception_step()` is called in the `drive_rover.py` script, in which the Rover receives new images from the simulator and updates the navigable ground and world map. 
+
+`perception_step()` resembles the `process_image()` in Notebook Analysis section, except that Rover's vision map needed to be updated to the latest thresholded image.
+```
+Rover.vision_image[:,:,0] = obstacle_thresholded
+Rover.vision_image[:,:,1] = rock_thresholded
+Rover.vision_image[:,:,2] = ground_thresholded
+```
+Also the ground pixels are converted into polar coordinates:
+```
+Rover.nav_dists, Rover.nav_angles = to_polar_coords(xpix_ground, ypix_ground) 
+```
+where `xpix_ground` and `ypix_ground` are the ground pixels in rover-centric coordinate and used to determine Rover's steering angles.
+
+## 2. Decision step
+`decision_step()` is also called in the `driver_rover.py` script after `perception_step` is completed. There are three modes in the decision-making process:
+
+**In "forward" mode**
+1. If the Rover has enough space to move (navigatable ground pixels are greater than pre-defined threshold), it moves forward with maximum throttle until it has reached maximum speed. When the Rover stucks in dead-end or does not have space to move, brake is applied and it goes to "stop" mode.
+
+2. To stablize the steering, outlier rejection is utlized based on the percentile of `nav_angles`. 
+```
+def remove_outlier(angles):
+	lower_bound = np.percentile(angles, 25)
+	upper_bound = np.percentile(angles, 75)
+	
+	angles = [i for i in angles if (i >= lower_bound and i <= upper_bound)]
+	return np.mean(angles)
+```
+In this case, angles between 25% and 75% in the percentile scale are chosen to calculate the steering angle, which is the average valid angles. 
+
+3. Rover can sometimes be stuck for several reasons. If the Rover's absolute velocity is less than 0.05 but the throttle is non-zeros, the stuck timer starts ticking. When the Rover couldn't get out of the state, it will transition to "unstuck" mode.
+
+**In "stop" mode**
+1. Rover applies hard brake for immediate stop if it still has momentum.
+2. When it come to a dead-end, Rover performs 4-wheel-turning until it has space to move. To make sure the space is efficient, Rover backs up straight a bit before it transitions to "forward" mode.
+
+
+**In "unstuck" mode**
+```
+Rover.mode == 'unstuck':
+	Rover.throttle = -Rover.throttle_set
+	Rover.brake = 0
+	Rover.steer = 0
+	if (time.time() - Rover.unstuck_timer) > 3:
+		Rover.mode = 'forward'
+```
+1. Rover reaches complete stop and attempts to move backward straight.
+2. When Rover backs up for 3 seconds, it should be able to pass obstacles.
