@@ -10,10 +10,8 @@ This project is to navigate the Rover autonomously to explore a simulated enviro
 
 The simulation and the autonomy development are inspired by the [NASA sample return challenge](https://www.nasa.gov/directorates/spacetech/centennial_challenges/sample_return_robot/index.html)
 
-### Video Demo
-[Click Here](https://www.youtube.com/watch?v=ZW1d9I3rd2Y)
-
 ### Notebook Analysis
+## 1. Image processing
 `color_thresh` function defined as follows:
 ```
 # Identify pixels above the threshold
@@ -51,9 +49,9 @@ In this function, ground has already been identified as when the RGB pixel value
 
 ![color_thresh][image1]
 
-Obstacles include the true obstacles appeared in the image and black pixels that do not appear in the image (two black triangles on the warped image).
+Obstacles include the true obstacles appeared in the image and black pixels that do not appear in the image (two black triangles on the side of the warped image).
 
-Another piece added to the existing project is the `process_image()`:
+## 2. Mapping
 ```
 # Apply the above functions in succession and update the Rover state accordingly
 def perception_step(Rover):
@@ -108,7 +106,7 @@ For each image generated from the simulator, the function first loads the image 
 source, destination = define_box(img)
 warped = perspect_transform(img, source, destination)
 ```
-When Rover's camera generates a new image, it must be transformed into top-down view using perspective transformation, which helps coordinate transform later in the code.
+When Rover's camera generates a new image, it must be transformed into top-down view using perspective transformation, as shown in Figure 1, which helps coordinate transform later in the code.
 
 ```
 ground_select, obstacle_select, rock_select = color_thresh(warped)
@@ -135,3 +133,10 @@ Rover.worldmap[y_pix_rock_world, x_pix_rock_world, 1] += 1
 Rover.worldmap[y_pix_ground_world, x_pix_ground_world, 2] += 1
 ```
 Rover's worldmap can be updated by using the calculated world frame coordinates of ground, obstacles, and rocks.
+
+### Video Demo
+[Click Here](https://www.youtube.com/watch?v=ZW1d9I3rd2Y) for video demo. The simulation is run under 1920 x 1080 resolution and "Fantastic" graphics quality, giving 27 FPS. 
+
+### Autonomous Navigation and Mapping
+## 1. Perception step
+As mentioned in Noteboo
