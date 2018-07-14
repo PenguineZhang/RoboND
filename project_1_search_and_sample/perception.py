@@ -25,12 +25,10 @@ def color_thresh(img, rgb_thresh=(160, 160, 160)):
     rock_select[rock_thresh] = 1
     
     # obstacle (wall/mountain) threshold
-    obstacle_thresh = (img[:,:,0] <= 160) & \
-                  (img[:,:,1] <= 160) & \
-                  (img[:,:,2] <= 160)
+    obstacle_thresh =  (0 != img[:,:,0]) & (img[:,:,0] < rgb_thresh[0]) &\
+                (0 != img[:,:,1]) & (img[:,:,1] < rgb_thresh[1]) &\
+                (0 != img[:,:,2]) & (img[:,:,2] < rgb_thresh[2])
     obstacle_select[obstacle_thresh] = 1
-    
-    print np.sum(rock_select.flatten())
     
     # Return the binary image
     return ground_select, obstacle_select, rock_select
