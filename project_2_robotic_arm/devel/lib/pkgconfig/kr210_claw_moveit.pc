@@ -1,8 +1,0 @@
-prefix=/home/peng/RoboND/Term_1/project_2_robotic_arm/devel
-
-Name: kr210_claw_moveit
-Description: Description of kr210_claw_moveit
-Version: 0.3.0
-Cflags: 
-Libs: -L/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib 
-Requires: 

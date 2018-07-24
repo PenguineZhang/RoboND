@@ -1,8 +1,0 @@
-prefix=/home/peng/RoboND/Term_1/project_2_robotic_arm/install
-
-Name: simple_arm
-Description: Description of simple_arm
-Version: 0.0.0
-Cflags: -I/home/peng/RoboND/Term_1/project_2_robotic_arm/install/include
-Libs: -L/home/peng/RoboND/Term_1/project_2_robotic_arm/install/lib 
-Requires: 
