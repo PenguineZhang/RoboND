@@ -1,0 +1,2 @@
+RoboND-Kinematics-Project/gazebo_grasp_plugin:RoboND-Kinematics-Project/kr210_claw_moveit:RoboND-Kinematics-Project/kuka_arm:simple_arm
+-DCATKIN_DEVEL_PREFIX=/home/peng/RoboND/Term_1/project_2_robotic_arm/devel -DCMAKE_INSTALL_PREFIX=/home/peng/RoboND/Term_1/project_2_robotic_arm/install -G Unix Makefiles

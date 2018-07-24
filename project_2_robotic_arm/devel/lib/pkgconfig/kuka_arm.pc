@@ -1,0 +1,8 @@
+prefix=/home/peng/RoboND/Term_1/project_2_robotic_arm/devel
+
+Name: kuka_arm
+Description: Description of kuka_arm
+Version: 0.0.0
+Cflags: -I/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/include
+Libs: -L/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib 
+Requires: 
