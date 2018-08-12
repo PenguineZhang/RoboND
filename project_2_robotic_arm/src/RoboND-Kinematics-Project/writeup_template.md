@@ -1,5 +1,6 @@
 ## Project: Kinematics Pick & Place
-### Writeup Template: You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+### Project Objective
+This project focuses on controlling kuka arm to pick up target and drop it into the bin in a simulation environment. The objective is to compute the forward and inverse kinematic of the arm by calculating each joint angles and cooresponding frame transformation.
 
 ---
 
@@ -13,16 +14,6 @@
 4. Launch in [demo mode](https://classroom.udacity.com/nanodegrees/nd209/parts/7b2fd2d7-e181-401e-977a-6158c77bf816/modules/8855de3f-2897-46c3-a805-628b5ecf045b/lessons/91d017b1-4493-4522-ad52-04a74a01094c/concepts/ae64bb91-e8c4-44c9-adbe-798e8f688193).
 5. Perform Kinematic Analysis for the robot following the [project rubric](https://review.udacity.com/#!/rubrics/972/view).
 6. Fill in the `IK_server.py` with your Inverse Kinematics code. 
-
-
-<!-- [//]: # (Image References)
-
-[image1]: ./misc_images/misc1.png
-[image2]: ./misc_images/misc3.png
-[image3]: ./misc_images/misc2.png -->
-
-## [Rubric](https://review.udacity.com/#!/rubrics/972/view) Points
-### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
 
 ---
 ### Writeup / README
@@ -42,13 +33,13 @@ Here is an example of how to include an image in your writeup.
 
 Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 --- | --- | --- | --- | ---
-0->1 | 0 | 0 | L1 | qi
-1->2 | - pi/2 | L2 | 0 | -pi/2 + q2
-2->3 | 0 | 0 | 0 | 0
-3->4 |  0 | 0 | 0 | 0
-4->5 | 0 | 0 | 0 | 0
-5->6 | 0 | 0 | 0 | 0
-6->EE | 0 | 0 | 0 | 0
+0->1 | 0 | 0 | 0.75 | \theta
+1->2 | -\pi/2 | L2 | 0 | -\pi/2 + q2
+2->3 | 0 | 0 | 0 | q3
+3->4 |  0 | 0 | 0 | q4
+4->5 | 0 | 0 | 0 | q5
+5->6 | 0 | 0 | 0 | q6
+6->EE | 0 | 0 | 0 | q7
 
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
