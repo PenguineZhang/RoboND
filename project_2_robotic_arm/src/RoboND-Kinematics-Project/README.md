@@ -36,7 +36,8 @@ From joint<sub>i-1</sub> to joint_<sub>i</sub>, the transform matrix (rotation +
 ![matrix.png]
 
 In this project, the transform between each joint in shown below with constants substituted:
-'''sh
+
+'''
 T0_1 = 	Matrix([
 		[cos(q1), -sin(q1), 0,    0],
 		[sin(q1),  cos(q1), 0,    0],
