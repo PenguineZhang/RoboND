@@ -1,5 +1,6 @@
 ## Project: Kinematics Pick & Place
-### Writeup Template: You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
+### Project Objective
+This project focuses on controlling kuka arm to pick up target and drop it into the bin in a simulation environment. The objective is to compute the forward and inverse kinematic of the arm by calculating each joint angles and cooresponding frame transformation.
 
 ---
 
@@ -42,13 +43,13 @@ Here is an example of how to include an image in your writeup.
 
 Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 --- | --- | --- | --- | ---
-0->1 | 0 | 0 | L1 | qi
-1->2 | - pi/2 | L2 | 0 | -pi/2 + q2
-2->3 | 0 | 0 | 0 | 0
-3->4 |  0 | 0 | 0 | 0
-4->5 | 0 | 0 | 0 | 0
-5->6 | 0 | 0 | 0 | 0
-6->EE | 0 | 0 | 0 | 0
+0->1 | 0 | 0 | 0.75 | \theta
+1->2 | -\pi/2 | L2 | 0 | -\pi/2 + q2
+2->3 | 0 | 0 | 0 | q3
+3->4 |  0 | 0 | 0 | q4
+4->5 | 0 | 0 | 0 | q5
+5->6 | 0 | 0 | 0 | q6
+6->EE | 0 | 0 | 0 | q7
 
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
