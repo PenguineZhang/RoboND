@@ -37,7 +37,7 @@ From joint<sub>i-1</sub> to joint<sub>i</sub>, the transform matrix (rotation + 
 
 In this project, the transform between each joint in shown below with constants substituted:
 
-'''
+```
 T0_1 = 	Matrix([
 		[cos(q1), -sin(q1), 0,    0],
 		[sin(q1),  cos(q1), 0,    0],
@@ -73,7 +73,7 @@ T5_6 = Matrix([
 		[       0,        0, 1, 0],
 		[-sin(q6), -cos(q6), 0, 0],
 		[       0,        0, 0, 1]])
-'''
+```
 
 ---
 ### Kinematic Analysis
