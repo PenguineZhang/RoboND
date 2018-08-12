@@ -32,8 +32,8 @@ Links | alpha(i-1) | a(i-1) | d(i) | theta(i)
 
 Note that since there is a -90 degrees rotation offset from joint1 to joint2, subtraction of pi/2 has been added in forward kinematic calculation.
 
-From joint<sub>i-1</sub> to joint_<sub>i</sub>, the transform matrix (rotation + translation) is the following:
-![matrix.png]
+From joint<sub>i-1</sub> to joint<sub>i</sub>, the transform matrix (rotation + translation) is the following:
+![mat]
 
 In this project, the transform between each joint in shown below with constants substituted:
 
