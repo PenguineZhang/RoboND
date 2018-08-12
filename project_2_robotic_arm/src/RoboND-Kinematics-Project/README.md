@@ -14,6 +14,7 @@ This project focuses on controlling kuka arm to pick up target and drop it into 
 [mat]: ./img/matrix.png
 [wc]: ./img/wc_cal.png
 [wc_math]: ./img/wc_cal_math.png
+[equ]: ./img/CodeCogsEqn.gif
 
 ## Project Procedure
 ### Obtain DH parameter table
@@ -112,6 +113,7 @@ Now we have wrist center figured out, the joint angles for the first three joint
 
 ![sketch]
 
+![equ]
 
 
 ### Project Implementation
