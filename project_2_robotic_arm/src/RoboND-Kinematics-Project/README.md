@@ -14,7 +14,7 @@ This project focuses on controlling kuka arm to pick up target and drop it into 
 [mat]: ./img/matrix.png
 
 ## Project Procedure
-### Obtaining DH parameter table
+### Obtain DH parameter table
 Below is the simplified representation of the kuka arm with partial DH parameters labelled.
 ![kuka]
 
@@ -35,7 +35,7 @@ Note that since there is a -90 degrees rotation offset from joint1 to joint2, su
 From joint<sub>i-1</sub> to joint<sub>i</sub>, the transform matrix (rotation + translation) is the following:
 ![mat]
 
-In this project, the transform between each joint in shown below with constants substituted:
+In this project, the homogeneous transform between each joint in shown below with constants substituted:
 
 ```
 T0_1 = 	Matrix([
@@ -73,20 +73,31 @@ T5_6 = Matrix([
 		[       0,        0, 1, 0],
 		[-sin(q6), -cos(q6), 0, 0],
 		[       0,        0, 0, 1]])
+
+T6_EE = Matrix([
+		[1, 0, 0,     0],
+		[0, 1, 0,     0],
+		[0, 0, 1, 0.303],
+		[0, 0, 0,     1]])
 ```
 
 ---
 ### Kinematic Analysis
-#### 1. Run the forward_kinematics demo and evaluate the kr210.urdf.xacro file to perform kinematic analysis of Kuka KR210 robot and derive its DH parameters.
+#### Forward Kinematics
+Forward kinematics (FK) is to use the known joint angles to drive each joint towards a desired end-effector location. To do that, one can simply substitute the joint angles into `T0_1`, `T1_2`, etc and multiply the matrices,
+```
+T0_EE = T0_1 * T1_2 * T2_3 * T3_4 * T4_5 * T5_6 * T6_EE
+```
+The above equation calculates the transform between the base_link and end_effect.
 
-Here is an example of how to include an image in your writeup.
-
-#### 2. Using the DH parameter table you derived earlier, create individual transformation matrices about each joint. In addition, also generate a generalized homogeneous transform between base_link and gripper_link using only end-effector(gripper) pose.
-
+#### Inverse Kinematics
+Inverse kinematics (IK) is doing the opposite of FK. In the IK process, joint angles are calculated given the end-effector location. To solve the each joint angle, decoupling technique has been utilized to divide the problme into Inverse Position Kinematics and Inverse Orientation Kinematics, which are explained below.
 
 
+##### Inverse Position Kinematics
 
-#### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
+
+##### Inverse Orientation Kinematics
 
 And here's where you can draw out and show your math for the derivation of your theta angles. 
 
