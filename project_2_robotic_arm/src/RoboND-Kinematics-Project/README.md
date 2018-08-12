@@ -105,7 +105,7 @@ To compute the wrist center analytically, one can use equation:
 
 ![wc_math]
 
-where R<sup>0</sup><sub>6</sub>
+where <sup>0</sup><sub>6</sub>R
 
 ##### Inverse Orientation Kinematics
 
