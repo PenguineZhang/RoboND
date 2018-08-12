@@ -12,6 +12,8 @@ This project focuses on controlling kuka arm to pick up target and drop it into 
 [result]: ./img/task_completion.jpg
 [sketch]: ./img/kinematic_analysis.png
 [mat]: ./img/matrix.png
+[wc]: ./img/wc_cal.png
+[wc_math]: ./img/wc_cal_math.png
 
 ## Project Procedure
 ### Obtain DH parameter table
@@ -95,7 +97,15 @@ Inverse kinematics (IK) is doing the opposite of FK. In the IK process, joint an
 
 
 ##### Inverse Position Kinematics
+The last three joints compose the spherical joints, where rotation axes intersect at a single point called wrist center. The wrist center determines the position of the end-effect. The way to calculate the wrist center is to back-trace along the end-effector orientation:
 
+![wc]
+
+To compute the wrist center analytically, one can use equation:
+
+![wc_math]
+
+where R<sup>0</sup><sub>6</sub>
 
 ##### Inverse Orientation Kinematics
 
