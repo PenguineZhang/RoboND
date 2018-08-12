@@ -44,12 +44,12 @@ Here is an example of how to include an image in your writeup.
 Links | alpha(i-1) | a(i-1) | d(i-1) | theta(i)
 --- | --- | --- | --- | ---
 0->1 | 0 | 0 | 0.75 | q<sub>1</sub>
-1->2 | -pi/2 | L2 | 0 | -pi/2 + q2
-2->3 | 0 | 0 | 0 | q3
-3->4 |  0 | 0 | 0 | q4
-4->5 | 0 | 0 | 0 | q5
-5->6 | 0 | 0 | 0 | q6
-6->EE | 0 | 0 | 0 | q7
+1->2 | -pi/2 | 0.35 | 0 | -pi/2 + q<sub>2</sub>
+2->3 | 0 | 1.25 | 0 | q<sub>3</sub>
+3->4 |  -pi/2 | -0.054 | 1.5 | q<sub>4</sub>
+4->5 | pi/2 | 0 | 0 | q<sub>5</sub>
+5->6 | -pi/2 | 0 | 0 | q<sub>6</sub>
+6->EE | 0 | 0 | 0.303 | q<sub>7</sub>
 
 
 #### 3. Decouple Inverse Kinematics problem into Inverse Position Kinematics and inverse Orientation Kinematics; doing so derive the equations to calculate all individual joint angles.
