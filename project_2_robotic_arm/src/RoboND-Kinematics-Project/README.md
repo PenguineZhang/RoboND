@@ -105,13 +105,14 @@ To compute the wrist center analytically, one can use equation:
 
 ![wc_math]
 
-where <sup>0</sup><sub>6</sub>R
+where <sup>0</sup><sub>6</sub>R is the rotation from base_link to joint 6 and d is the d<sub>G</sub> in the DH parameter table. Since the end-effector position and orientation are known, <sup>0</sup><sub>6</sub>R is just the rotation matrix of the end-effector. 
 
 ##### Inverse Orientation Kinematics
+Now we have wrist center figured out, the joint angles for the first three joints are next to calculate. The sketch below helps in the calculation:
 
-And here's where you can draw out and show your math for the derivation of your theta angles. 
+![sketch]
 
-![alt text][image2]
+
 
 ### Project Implementation
 
