@@ -14,7 +14,6 @@ This project focuses on controlling kuka arm to pick up target and drop it into 
 [mat]: ./img/matrix.png
 [wc]: ./img/wc_cal.png
 [wc_math]: ./img/wc_cal_math.png
-[equ]: ./img/CodeCogsEqn.gif
 
 ## Project Procedure
 ### Obtain DH parameter table
@@ -109,22 +108,43 @@ To compute the wrist center analytically, one can use equation:
 where <sup>0</sup><sub>6</sub>R is the rotation from base_link to joint 6 and d is the d<sub>G</sub> in the DH parameter table. Since the end-effector position and orientation are known, <sup>0</sup><sub>6</sub>R is just the rotation matrix of the end-effector. 
 
 ##### Inverse Orientation Kinematics
-Now we have wrist center figured out, the joint angles for the first three joints are next to calculate. The sketch below helps in the calculation:
-
+Now we have wrist center figured out, the joint angles for the first three joints are next to calculate. The sketch below shows the problem setup and calculations for the first three joints. 
 ![sketch]
 
-![equ]
+With theta1, theta2, theta3 computed, one can apply the forward kinematics matrices for the first three joints. As a result, 
+```
+<sup>0</sup><sub>3</sub>R = T0_1[0:3, 0:3] * T1_2[0:3,0:3] * T2_3[0:3,0:3]
+```
+One can use the equation in Forward Kinematics section to derive the rotation from joint 3 to joint 6:
+```
+<sup>0</sup><sub>6</sub>R = <sup>0</sup><sub>3</sub>R * <sup>3</sup><sub>6</sub>R
+```
+Hence,
+```
+<sup>3</sup><sub>6</sub>R = (<sup>0</sup><sub>3</sub>R)<sup>T</sup> * <sup>0</sup><sub>6</sub>R 
+```
+Here, we use the fact that rotation matrix is orthonormal so its inverse is the transpose. Since we have numerical representation of the matrix, as well as the symbolic representation (expression below), we can associate the numerical value and corresponding expression to obtain remaining joint angles 
 
+```
+R3_6 = Matrix([
+			  [-sin(q4)*sin(q6) + cos(q4)*cos(q5)*cos(q6), -sin(q4)*cos(q6) - sin(q6)*cos(q4)*cos(q5), -sin(q5)*cos(q4)],
+			  [sin(q5)*cos(q6),                           -sin(q5)*sin(q6),          cos(q5)],
+			  [-sin(q4)*cos(q5)*cos(q6) - sin(q6)*cos(q4),  sin(q4)*sin(q6)*cos(q5) - cos(q4)*cos(q6),  sin(q4)*sin(q5)]])
+```
 
-### Project Implementation
+Joint angles can be found with numerical `R3_6`:
+```
+theta4 = atan2(R3_6[2,2], -R3_6[0,2])
+theta5 = atan2(sqrt(R3_6[0,2]**2 + R3_6[2,2]**2), R3_6[1,2])
+theta6 = atan2(-R3_6[1,1], R3_6[1,0])
+```
+Note that `atan2` is used for the angles because it takes appropriate angle sign into account, avoiding angle ambiguity. 
 
-#### 1. Fill in the `IK_server.py` file with properly commented python code for calculating Inverse Kinematics based on previously performed Kinematic Analysis. Your code must guide the robot to successfully complete 8/10 pick and place cycles. Briefly discuss the code you implemented and your results. 
+### Result
+`IK_server.py` is filled in with the joint angle solution in the above section. The pick and place process is shown below,
 
+![motion]
 
-Here I'll talk about the code, what techniques I used, what worked and why, where the implementation might fail and how I might improve it if I were going to pursue this project further.  
+By running the process couple more times, the kuka arm is able to complete the tasks 10/10. 
 
-
-And just for fun, another example image:
-![alt text][image3]
-
-
+![result]
