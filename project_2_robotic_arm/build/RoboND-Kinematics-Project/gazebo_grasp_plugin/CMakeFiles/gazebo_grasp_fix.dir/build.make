@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/src
+CMAKE_SOURCE_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/build
+CMAKE_BINARY_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/build
 
 # Include any dependencies generated for this target.
 include RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/depend.make
@@ -58,17 +58,17 @@ include RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fi
 include RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/flags.make
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/flags.make
-RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o: /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o -c /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp
+RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o: /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o"
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o -c /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.i"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp > CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.i
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp > CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.i
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.s"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp -o CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.s
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp -o CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.s
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o.requires:
 
@@ -82,17 +82,17 @@ RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/sr
 
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/flags.make
-RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o: /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o -c /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp
+RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o: /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o"
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o -c /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.i"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp > CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.i
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp > CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.i
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.s"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp -o CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.s
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp -o CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.s
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o.requires:
 
@@ -113,71 +113,71 @@ gazebo_grasp_fix_OBJECTS = \
 # External object files for target gazebo_grasp_fix
 gazebo_grasp_fix_EXTERNAL_OBJECTS =
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/build.make
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_math.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_ccd.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libsdformat.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libsdformat.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gazebo_grasp_fix.dir/link.txt --verbose=$(VERBOSE)
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspFix.cpp.o
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/src/GazeboGraspGripper.cpp.o
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/build.make
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_math.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libgazebo_ccd.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libsdformat.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libignition-math2.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libsdformat.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so: RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so"
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gazebo_grasp_fix.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/build: /home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so
+RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/build: /home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so
 
 .PHONY : RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/build
 
@@ -187,10 +187,10 @@ RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/re
 .PHONY : RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/requires
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/clean:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_grasp_fix.dir/cmake_clean.cmake
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin && $(CMAKE_COMMAND) -P CMakeFiles/gazebo_grasp_fix.dir/cmake_clean.cmake
 .PHONY : RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/clean
 
 RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/depend:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term_1/project_2_robotic_arm/src /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin /home/peng/RoboND/Term_1/project_2_robotic_arm/build /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term1/project_2_robotic_arm/src /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin /home/peng/RoboND/Term1/project_2_robotic_arm/build /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : RoboND-Kinematics-Project/gazebo_grasp_plugin/CMakeFiles/gazebo_grasp_fix.dir/depend
 

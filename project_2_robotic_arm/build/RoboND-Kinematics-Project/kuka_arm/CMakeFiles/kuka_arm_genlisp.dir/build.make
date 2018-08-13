@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/src
+CMAKE_SOURCE_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/build
+CMAKE_BINARY_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/build
 
 # Utility rule file for kuka_arm_genlisp.
 
@@ -63,10 +63,10 @@ RoboND-Kinematics-Project/kuka_arm/CMakeFiles/kuka_arm_genlisp.dir/build: kuka_a
 .PHONY : RoboND-Kinematics-Project/kuka_arm/CMakeFiles/kuka_arm_genlisp.dir/build
 
 RoboND-Kinematics-Project/kuka_arm/CMakeFiles/kuka_arm_genlisp.dir/clean:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && $(CMAKE_COMMAND) -P CMakeFiles/kuka_arm_genlisp.dir/cmake_clean.cmake
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && $(CMAKE_COMMAND) -P CMakeFiles/kuka_arm_genlisp.dir/cmake_clean.cmake
 .PHONY : RoboND-Kinematics-Project/kuka_arm/CMakeFiles/kuka_arm_genlisp.dir/clean
 
 RoboND-Kinematics-Project/kuka_arm/CMakeFiles/kuka_arm_genlisp.dir/depend:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term_1/project_2_robotic_arm/src /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm /home/peng/RoboND/Term_1/project_2_robotic_arm/build /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm/CMakeFiles/kuka_arm_genlisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term1/project_2_robotic_arm/src /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm /home/peng/RoboND/Term1/project_2_robotic_arm/build /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm/CMakeFiles/kuka_arm_genlisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : RoboND-Kinematics-Project/kuka_arm/CMakeFiles/kuka_arm_genlisp.dir/depend
 

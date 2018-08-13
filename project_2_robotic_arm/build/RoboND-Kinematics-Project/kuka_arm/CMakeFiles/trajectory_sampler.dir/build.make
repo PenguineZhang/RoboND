@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/src
+CMAKE_SOURCE_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/build
+CMAKE_BINARY_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/build
 
 # Include any dependencies generated for this target.
 include RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/depend.make
@@ -58,17 +58,17 @@ include RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/pro
 include RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/flags.make
 
 RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o: RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/flags.make
-RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o: /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o -c /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp
+RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o: /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o"
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o -c /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp
 
 RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.i"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp > CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.i
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp > CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.i
 
 RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.s"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp -o CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.s
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp -o CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.s
 
 RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o.requires:
 
@@ -88,113 +88,113 @@ trajectory_sampler_OBJECTS = \
 # External object files for target trajectory_sampler
 trajectory_sampler_EXTERNAL_OBJECTS =
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/build.make
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_common_planning_interface_objects.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_scene_interface.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_move_group_interface.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_warehouse.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libwarehouse_ros.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_pick_place_planner.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_move_group_capabilities_base.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_visual_tools.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librviz_visual_tools.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librviz_visual_tools_gui.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librviz_visual_tools_remote_control.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librviz_visual_tools_imarker_simple.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libtf_conversions.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libkdl_conversions.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_interaction.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_rdf_loader.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_kinematics_plugin_loader.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_model_loader.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_constraint_sampler_manager_loader.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_pipeline.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_trajectory_execution_manager.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_plan_execution.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_scene_monitor.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_collision_plugin_loader.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_lazy_free_space_updater.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_point_containment_filter.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_occupancy_map_monitor.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_pointcloud_octomap_updater_core.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_semantic_world.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libimage_transport.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libclass_loader.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/libPocoFoundation.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libroslib.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librospack.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libinteractive_markers.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libtf.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libtf2_ros.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libactionlib.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmessage_filters.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libtf2.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_exceptions.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_background_processing.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_kinematics_base.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_model.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_transforms.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_state.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_trajectory.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_interface.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_collision_detection.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_collision_detection_fcl.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_kinematic_constraints.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_scene.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_constraint_samplers.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_request_adapter.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_profiler.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_trajectory_processing.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_distance_field.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_kinematics_metrics.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_dynamics_solver.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libfcl.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libeigen_conversions.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libgeometric_shapes.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/liboctomap.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/liboctomath.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libkdl_parser.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/liborocos-kdl.so.1.3.0
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/liburdf.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libtinyxml.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librosconsole_bridge.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librandom_numbers.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libsrdfdom.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libroscpp.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librosconsole.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libroscpp_serialization.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libxmlrpcpp.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librostime.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libcpp_common.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler"
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trajectory_sampler.dir/link.txt --verbose=$(VERBOSE)
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/src/trajectory_sampler.cpp.o
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/build.make
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_common_planning_interface_objects.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_scene_interface.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_move_group_interface.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_warehouse.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libwarehouse_ros.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_pick_place_planner.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_move_group_capabilities_base.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_visual_tools.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librviz_visual_tools.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librviz_visual_tools_gui.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librviz_visual_tools_remote_control.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librviz_visual_tools_imarker_simple.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libtf_conversions.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libkdl_conversions.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_interaction.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_rdf_loader.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_kinematics_plugin_loader.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_model_loader.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_constraint_sampler_manager_loader.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_pipeline.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_trajectory_execution_manager.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_plan_execution.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_scene_monitor.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_collision_plugin_loader.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_lazy_free_space_updater.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_point_containment_filter.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_occupancy_map_monitor.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_pointcloud_octomap_updater_core.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_semantic_world.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libimage_transport.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libclass_loader.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/libPocoFoundation.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libroslib.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librospack.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libinteractive_markers.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libtf.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libtf2_ros.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libactionlib.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmessage_filters.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libtf2.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_exceptions.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_background_processing.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_kinematics_base.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_model.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_transforms.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_state.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_robot_trajectory.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_interface.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_collision_detection.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_collision_detection_fcl.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_kinematic_constraints.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_scene.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_constraint_samplers.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_planning_request_adapter.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_profiler.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_trajectory_processing.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_distance_field.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_kinematics_metrics.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libmoveit_dynamics_solver.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libfcl.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libeigen_conversions.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libgeometric_shapes.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/liboctomap.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/liboctomath.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libkdl_parser.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/liborocos-kdl.so.1.3.0
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/liburdf.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libtinyxml.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librosconsole_bridge.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librandom_numbers.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libsrdfdom.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libroscpp.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librosconsole.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librosconsole_log4cxx.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librosconsole_backend_interface.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libroscpp_serialization.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libxmlrpcpp.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/librostime.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /opt/ros/kinetic/lib/libcpp_common.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler: RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler"
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trajectory_sampler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/build: /home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler
+RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/build: /home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/kuka_arm/trajectory_sampler
 
 .PHONY : RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/build
 
@@ -203,10 +203,10 @@ RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/requires: R
 .PHONY : RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/requires
 
 RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/clean:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && $(CMAKE_COMMAND) -P CMakeFiles/trajectory_sampler.dir/cmake_clean.cmake
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm && $(CMAKE_COMMAND) -P CMakeFiles/trajectory_sampler.dir/cmake_clean.cmake
 .PHONY : RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/clean
 
 RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/depend:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term_1/project_2_robotic_arm/src /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm /home/peng/RoboND/Term_1/project_2_robotic_arm/build /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm /home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term1/project_2_robotic_arm/src /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm /home/peng/RoboND/Term1/project_2_robotic_arm/build /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm /home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : RoboND-Kinematics-Project/kuka_arm/CMakeFiles/trajectory_sampler.dir/depend
 

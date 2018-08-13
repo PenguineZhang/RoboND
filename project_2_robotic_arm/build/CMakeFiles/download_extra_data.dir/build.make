@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/src
+CMAKE_SOURCE_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/build
+CMAKE_BINARY_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term_1/project_2_robotic_arm/src /home/peng/RoboND/Term_1/project_2_robotic_arm/src /home/peng/RoboND/Term_1/project_2_robotic_arm/build /home/peng/RoboND/Term_1/project_2_robotic_arm/build /home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term1/project_2_robotic_arm/src /home/peng/RoboND/Term1/project_2_robotic_arm/src /home/peng/RoboND/Term1/project_2_robotic_arm/build /home/peng/RoboND/Term1/project_2_robotic_arm/build /home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

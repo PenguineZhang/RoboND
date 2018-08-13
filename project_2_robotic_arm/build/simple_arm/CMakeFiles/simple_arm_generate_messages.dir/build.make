@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/src
+CMAKE_SOURCE_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/build
+CMAKE_BINARY_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/build
 
 # Utility rule file for simple_arm_generate_messages.
 
@@ -63,10 +63,10 @@ simple_arm/CMakeFiles/simple_arm_generate_messages.dir/build: simple_arm_generat
 .PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages.dir/build
 
 simple_arm/CMakeFiles/simple_arm_generate_messages.dir/clean:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/simple_arm && $(CMAKE_COMMAND) -P CMakeFiles/simple_arm_generate_messages.dir/cmake_clean.cmake
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/simple_arm && $(CMAKE_COMMAND) -P CMakeFiles/simple_arm_generate_messages.dir/cmake_clean.cmake
 .PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages.dir/clean
 
 simple_arm/CMakeFiles/simple_arm_generate_messages.dir/depend:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term_1/project_2_robotic_arm/src /home/peng/RoboND/Term_1/project_2_robotic_arm/src/simple_arm /home/peng/RoboND/Term_1/project_2_robotic_arm/build /home/peng/RoboND/Term_1/project_2_robotic_arm/build/simple_arm /home/peng/RoboND/Term_1/project_2_robotic_arm/build/simple_arm/CMakeFiles/simple_arm_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term1/project_2_robotic_arm/src /home/peng/RoboND/Term1/project_2_robotic_arm/src/simple_arm /home/peng/RoboND/Term1/project_2_robotic_arm/build /home/peng/RoboND/Term1/project_2_robotic_arm/build/simple_arm /home/peng/RoboND/Term1/project_2_robotic_arm/build/simple_arm/CMakeFiles/simple_arm_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages.dir/depend
 

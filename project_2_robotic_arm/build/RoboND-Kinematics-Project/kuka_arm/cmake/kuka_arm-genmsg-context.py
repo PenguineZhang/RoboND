@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/srv/CalculateIK.srv"
+services_str = "/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/srv/CalculateIK.srv"
 pkg_name = "kuka_arm"
 dependencies_str = "std_msgs;geometry_msgs;trajectory_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

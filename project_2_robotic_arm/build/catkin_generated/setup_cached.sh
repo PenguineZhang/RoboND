@@ -7,10 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/peng/RoboND/Term_1/project_2_robotic_arm/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/pkgconfig://home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/peng/RoboND/Term_1/project_2_robotic_arm/build"
-export PYTHONPATH="/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/python2.7/dist-packages://home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/peng/RoboND/Term_1/project_2_robotic_arm/src:$ROS_PACKAGE_PATH"
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu:/usr/local/cuda/lib64"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
+export PWD="/home/peng/RoboND/Term1/project_2_robotic_arm/build"
+export PYTHONPATH="/opt/ros/kinetic/lib/python2.7/dist-packages"
+export ROS_PACKAGE_PATH="/home/peng/RoboND/Term1/project_2_robotic_arm/src:/opt/ros/kinetic/share"

@@ -67,14 +67,14 @@ set(kuka_arm_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(kuka_arm_SOURCE_PREFIX /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm)
-  set(kuka_arm_DEVEL_PREFIX /home/peng/RoboND/Term_1/project_2_robotic_arm/devel)
+  set(kuka_arm_SOURCE_PREFIX /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm)
+  set(kuka_arm_DEVEL_PREFIX /home/peng/RoboND/Term1/project_2_robotic_arm/devel)
   set(kuka_arm_INSTALL_PREFIX "")
   set(kuka_arm_PREFIX ${kuka_arm_DEVEL_PREFIX})
 else()
   set(kuka_arm_SOURCE_PREFIX "")
   set(kuka_arm_DEVEL_PREFIX "")
-  set(kuka_arm_INSTALL_PREFIX /home/peng/RoboND/Term_1/project_2_robotic_arm/install)
+  set(kuka_arm_INSTALL_PREFIX /home/peng/RoboND/Term1/project_2_robotic_arm/install)
   set(kuka_arm_PREFIX ${kuka_arm_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(kuka_arm_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/include " STREQUAL " ")
+if(NOT "/home/peng/RoboND/Term1/project_2_robotic_arm/devel/include " STREQUAL " ")
   set(kuka_arm_INCLUDE_DIRS "")
-  set(_include_dirs "/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/include")
+  set(_include_dirs "/home/peng/RoboND/Term1/project_2_robotic_arm/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/include " STREQUAL 
         message(FATAL_ERROR "Project 'kuka_arm' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'kuka_arm' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'kuka_arm' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/${idir}'.  ${_report}")
     endif()
     _list_append_unique(kuka_arm_INCLUDE_DIRS ${include})
   endforeach()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib;//home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib;/opt/ros/kinetic/lib)
+    foreach(path /home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib;/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib;/opt/ros/kinetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

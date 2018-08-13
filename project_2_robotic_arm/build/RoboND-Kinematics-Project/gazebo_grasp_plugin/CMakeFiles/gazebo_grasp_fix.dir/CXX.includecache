@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h
+/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspFix.h
 boost/bind.hpp
 -
 gazebo/gazebo.hh
@@ -22,7 +22,7 @@ stdio.h
 gazebo_grasp_plugin/GazeboGraspGripper.h
 -
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h
+/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/include/gazebo_grasp_plugin/GazeboGraspGripper.h
 boost/bind.hpp
 -
 gazebo/gazebo.hh
@@ -36,7 +36,7 @@ gazebo/transport/TransportTypes.hh
 stdio.h
 -
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp
+/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspFix.cpp
 boost/bind.hpp
 -
 gazebo/gazebo.hh
@@ -54,7 +54,7 @@ stdio.h
 gazebo_grasp_plugin/GazeboGraspFix.h
 -
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp
+/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/src/GazeboGraspGripper.cpp
 boost/bind.hpp
 -
 gazebo/gazebo.hh

@@ -1,8 +1,8 @@
-# Install script for directory: /home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin
+# Install script for directory: /home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/peng/RoboND/Term_1/project_2_robotic_arm/install")
+  set(CMAKE_INSTALL_PREFIX "/home/peng/RoboND/Term1/project_2_robotic_arm/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,18 +33,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/catkin_generated/installspace/gazebo_grasp_plugin.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/catkin_generated/installspace/gazebo_grasp_plugin.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_grasp_plugin/cmake" TYPE FILE FILES
-    "/home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/catkin_generated/installspace/gazebo_grasp_pluginConfig.cmake"
-    "/home/peng/RoboND/Term_1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/catkin_generated/installspace/gazebo_grasp_pluginConfig-version.cmake"
+    "/home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/catkin_generated/installspace/gazebo_grasp_pluginConfig.cmake"
+    "/home/peng/RoboND/Term1/project_2_robotic_arm/build/RoboND-Kinematics-Project/gazebo_grasp_plugin/catkin_generated/installspace/gazebo_grasp_pluginConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_grasp_plugin" TYPE FILE FILES "/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_grasp_plugin" TYPE FILE FILES "/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -54,7 +54,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_grasp_fix.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib/libgazebo_grasp_fix.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_grasp_fix.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgazebo_grasp_fix.so")
     file(RPATH_CHANGE
@@ -68,10 +68,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gazebo_grasp_plugin" TYPE DIRECTORY FILES "/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/include/gazebo_grasp_plugin/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/gazebo_grasp_plugin" TYPE DIRECTORY FILES "/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/include/gazebo_grasp_plugin/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_grasp_plugin" TYPE DIRECTORY FILES "/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/launch" FILES_MATCHING REGEX "/[^/]*\\.launch$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_grasp_plugin" TYPE DIRECTORY FILES "/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/gazebo_grasp_plugin/launch" FILES_MATCHING REGEX "/[^/]*\\.launch$")
 endif()
 

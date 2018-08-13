@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp
+Change Dir: /home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_975bc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_975bc.dir/build.make CMakeFiles/cmTC_975bc.dir/build
-make[1]: Entering directory '/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_975bc.dir/CheckSymbolExists.c.o
-/usr/bin/cc     -o CMakeFiles/cmTC_975bc.dir/CheckSymbolExists.c.o   -c /home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_975bc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_975bc.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_975bc.dir/CheckSymbolExists.c.o  -o cmTC_975bc -rdynamic 
-CMakeFiles/cmTC_975bc.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_15dad/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15dad.dir/build.make CMakeFiles/cmTC_15dad.dir/build
+make[1]: Entering directory '/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15dad.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_15dad.dir/CheckSymbolExists.c.o   -c /home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_15dad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15dad.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_15dad.dir/CheckSymbolExists.c.o  -o cmTC_15dad -rdynamic 
+CMakeFiles/cmTC_15dad.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_975bc.dir/build.make:97: recipe for target 'cmTC_975bc' failed
-make[1]: *** [cmTC_975bc] Error 1
-make[1]: Leaving directory '/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_975bc/fast' failed
-make: *** [cmTC_975bc/fast] Error 2
+CMakeFiles/cmTC_15dad.dir/build.make:97: recipe for target 'cmTC_15dad' failed
+make[1]: *** [cmTC_15dad] Error 1
+make[1]: Leaving directory '/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_15dad/fast' failed
+make: *** [cmTC_15dad/fast] Error 2
 
-File /home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp
+Change Dir: /home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f560b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f560b.dir/build.make CMakeFiles/cmTC_f560b.dir/build
-make[1]: Entering directory '/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f560b.dir/CheckFunctionExists.c.o
-/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f560b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f560b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f560b.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f560b.dir/CheckFunctionExists.c.o  -o cmTC_f560b -rdynamic -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_99489/fast"
+/usr/bin/make -f CMakeFiles/cmTC_99489.dir/build.make CMakeFiles/cmTC_99489.dir/build
+make[1]: Entering directory '/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99489.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_99489.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_99489
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99489.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_99489.dir/CheckFunctionExists.c.o  -o cmTC_99489 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_f560b.dir/build.make:97: recipe for target 'cmTC_f560b' failed
-make[1]: *** [cmTC_f560b] Error 1
-make[1]: Leaving directory '/home/peng/RoboND/Term_1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_f560b/fast' failed
-make: *** [cmTC_f560b/fast] Error 2
+CMakeFiles/cmTC_99489.dir/build.make:97: recipe for target 'cmTC_99489' failed
+make[1]: *** [cmTC_99489] Error 1
+make[1]: Leaving directory '/home/peng/RoboND/Term1/project_2_robotic_arm/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_99489/fast' failed
+make: *** [cmTC_99489/fast] Error 2
 
 

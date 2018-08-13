@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/include/kuka_arm/CalculateIK.h
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/include/kuka_arm/CalculateIK.h
 ros/service_traits.h
 -
 kuka_arm/CalculateIKRequest.h
@@ -14,7 +14,7 @@ kuka_arm/CalculateIKRequest.h
 kuka_arm/CalculateIKResponse.h
 -
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/include/kuka_arm/CalculateIKRequest.h
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/include/kuka_arm/CalculateIKRequest.h
 string
 -
 vector
@@ -32,7 +32,7 @@ ros/message_operations.h
 geometry_msgs/Pose.h
 -
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/include/kuka_arm/CalculateIKResponse.h
+/home/peng/RoboND/Term1/project_2_robotic_arm/devel/include/kuka_arm/CalculateIKResponse.h
 string
 -
 vector
@@ -50,7 +50,7 @@ ros/message_operations.h
 trajectory_msgs/JointTrajectoryPoint.h
 -
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/include/kuka_arm/trajectory_sampler.h
+/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/include/kuka_arm/trajectory_sampler.h
 string
 -
 sstream
@@ -82,7 +82,7 @@ eigen_conversions/eigen_msg.h
 kuka_arm/CalculateIK.h
 -
 
-/home/peng/RoboND/Term_1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp
+/home/peng/RoboND/Term1/project_2_robotic_arm/src/RoboND-Kinematics-Project/kuka_arm/src/trajectory_sampler.cpp
 kuka_arm/trajectory_sampler.h
 -
 

@@ -25,6 +25,16 @@ test_cases = {1:[[[2.16135,-1.42635,1.55109],
               4:[],
               5:[]}
 
+def qua2euler(q):
+
+    # R = np.array([ [1-2*(q[2]**2 + q[3]**2), 2*(q[1]*q[2]-q[0]*q[3]), 2*(q[0]*q[2]+q[1]*q[3])],
+    #                [2*(q[1]*q[2] + q[0]*q[3]), 1-2*(q[1]**2+q[3]**2), 2*(q[2]*q[3]-q[0]*q[1])],
+    #                [2*(q[1]*q[3] - q[0]*q[2]), 2*(q[0]*q[1]+q[2]*q[3]), 1-2*(q[1]**2+q[2]**2)] ])
+    R = np.array([ [q[0]**2 + q[1]**2 - q[2]**2 - q[3]**2, 2*(q[1]*q[2]-q[0]*q[3]), 2*(q[0]*q[2]+q[1]*q[3])],
+                   [2*(q[1]*q[2] + q[0]*q[3]), q[0]**2 - q[1]**2 + q[2]**2 - q[3]**2, 2*(q[2]*q[3]+q[0]*q[1])],
+                   [2*(q[1]*q[3] - q[0]*q[2]), 2*(q[0]*q[1]+q[2]*q[3]), q[0]**2 - q[1]**2 - q[2]**2 + q[3]**2] ])
+
+    return R
 
 def test_code(test_case):
     ## Set up code
@@ -61,8 +71,6 @@ def test_code(test_case):
     
     ########################################################################################
     ## 
-
-    ## Insert IK code here!
     q1, q2, q3, q4, q5, q6, q7 = symbols('q1:8')
     alpha0, alpha1, alpha2, alpha3, alpha4, alpha5, alpha6 = symbols('alpha1:7')
     a0, a1, a2, a3, a4, a5, a6 = symbols('a1:7')
@@ -75,6 +83,25 @@ def test_code(test_case):
          alpha4:  pi/2,  a4:      0, d5:     0, q5:q5
          alpha5: -pi/2,  a5:      0, d6:     0, q6:q6
          alpha6:     0,  a6:      0, d7: 0.303, q7:0}
+    
+    ## Insert IK code here!
+    
+    q1 = 
+    q2 = 0
+    q3 = 0
+    q4 = 0
+    q5 = 0
+    q6 = 0
+
+    ## 
+    ########################################################################################
+    
+    ########################################################################################
+    ## For additional debugging add your forward kinematics here. Use your previously calculated thetas
+    ## as the input and output the position of your end effector as your_ee = [x,y,z]
+
+    ## (OPTIONAL) YOUR CODE HERE!
+    
 
     #
     # Define Modified DH Transformation matrix
@@ -105,27 +132,6 @@ def test_code(test_case):
 
     # Extract rotation matrices from the transformation matrices
     rotation = T_total[:4,:4]
-
-
-
-
-
-    theta1 = 0
-    theta2 = 0
-    theta3 = 0
-    theta4 = 0
-    theta5 = 0
-    theta6 = 0
-
-    ## 
-    ########################################################################################
-    
-    ########################################################################################
-    ## For additional debugging add your forward kinematics here. Use your previously calculated thetas
-    ## as the input and output the position of your end effector as your_ee = [x,y,z]
-
-    ## (OPTIONAL) YOUR CODE HERE!
-
     ## End your code input for forward kinematics here!
     ########################################################################################
 

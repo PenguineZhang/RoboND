@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/src
+CMAKE_SOURCE_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/peng/RoboND/Term_1/project_2_robotic_arm/build
+CMAKE_BINARY_DIR = /home/peng/RoboND/Term1/project_2_robotic_arm/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build: rosgraph_msg
 .PHONY : simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build/simple_arm && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build/simple_arm && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/peng/RoboND/Term_1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term_1/project_2_robotic_arm/src /home/peng/RoboND/Term_1/project_2_robotic_arm/src/simple_arm /home/peng/RoboND/Term_1/project_2_robotic_arm/build /home/peng/RoboND/Term_1/project_2_robotic_arm/build/simple_arm /home/peng/RoboND/Term_1/project_2_robotic_arm/build/simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/peng/RoboND/Term1/project_2_robotic_arm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/peng/RoboND/Term1/project_2_robotic_arm/src /home/peng/RoboND/Term1/project_2_robotic_arm/src/simple_arm /home/peng/RoboND/Term1/project_2_robotic_arm/build /home/peng/RoboND/Term1/project_2_robotic_arm/build/simple_arm /home/peng/RoboND/Term1/project_2_robotic_arm/build/simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 
