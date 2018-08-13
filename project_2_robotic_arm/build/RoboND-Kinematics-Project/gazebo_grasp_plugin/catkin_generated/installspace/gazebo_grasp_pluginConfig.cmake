@@ -129,11 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-<<<<<<< HEAD
     foreach(path /home/peng/RoboND/Term1/project_2_robotic_arm/install/lib;/home/peng/RoboND/Term1/project_2_robotic_arm/devel/lib;/opt/ros/kinetic/lib)
-=======
-    foreach(path /home/peng/RoboND/Term_1/project_2_robotic_arm/install/lib;/home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib;//home/peng/RoboND/Term_1/project_2_robotic_arm/devel/lib;/opt/ros/kinetic/lib)
->>>>>>> 60698ffb11edac7d6a9f4d4635214561ff3e96ac
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
