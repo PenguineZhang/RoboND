@@ -132,26 +132,34 @@ def handle_calculate_IK(req):
 							 [0,-1, 0],
 							 [1, 0, 0]])
 
+			# correct the rotation of end-effector
 			R_ee = R * R_corr
-			d = 0.303
+
+			d = 0.303 #distance between joint 6 frame and end-effector frame
 			wrist = [px - d * R_ee[0,2],
 					 py - d * R_ee[1,2],
 					 pz - d * R_ee[2,2]]
 
+			# side lengths of the triangle formed by joint 2, joint 3, and wrist center
 			A = 1.501
 			B = sqrt((sqrt(wrist[0]**2 + wrist[1]**2) - 0.35)**2 + (wrist[2]-0.75)**2)
 			C = 1.25
 
+			# using Law of Cosine to compute the angles inside the triangle (only 2 are needed)
 			a = acos((B*B + C*C - A*A)/(2*B*C))
 			b = acos((A*A + C*C - B*B)/(2*A*C))
 
+			# calculation of first three joint angles, details can be found in README.md
 			theta1 = (atan2(wrist[1],wrist[0]))
 			theta2 = (np.pi/2 - a - atan2(wrist[2]-0.75, sqrt(wrist[0]**2 + wrist[1]**2) - 0.35) )
 			theta3 = (np.pi/2 - (b + 0.036))
 
+			# calculate the numerical representation of R3_6 given theta1, theta2, theta3
+			# use the factor that rotation matrix inverse is the transpose
 			R0_3 = (T0_1[0:3,0:3] * T1_2[0:3,0:3] * T2_3[0:3,0:3]).evalf(subs={q1:theta1, q2:theta2, q3:theta3})
 			R3_6 = R0_3.T * R_ee
 
+			# calculate the remaining joint angle, atan2 is used for angle disambiguity
 			x4 = -R3_6[0,2]
 			y4 = R3_6[2,2]
 			theta4 = (atan2(y4, x4))
