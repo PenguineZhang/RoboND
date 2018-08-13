@@ -126,8 +126,7 @@ Hence,
 Here, we use the fact that rotation matrix is orthonormal so its inverse is the transpose. Since we have numerical representation of the matrix, as well as the symbolic representation (expression below), we can associate the numerical value and corresponding expression to obtain remaining joint angles 
 
 ```
-R3_6 = Matrix([
-			  [-sin(q4)*sin(q6) + cos(q4)*cos(q5)*cos(q6), -sin(q4)*cos(q6) - sin(q6)*cos(q4)*cos(q5), -sin(q5)*cos(q4)],
+R3_6 = Matrix([[-sin(q4)*sin(q6) + cos(q4)*cos(q5)*cos(q6), -sin(q4)*cos(q6) - sin(q6)*cos(q4)*cos(q5), -sin(q5)*cos(q4)],
 			  [sin(q5)*cos(q6),                           -sin(q5)*sin(q6),          cos(q5)],
 			  [-sin(q4)*cos(q5)*cos(q6) - sin(q6)*cos(q4),  sin(q4)*sin(q6)*cos(q5) - cos(q4)*cos(q6),  sin(q4)*sin(q5)]])
 ```
