@@ -112,17 +112,17 @@ Now we have wrist center figured out, the joint angles for the first three joint
 ![sketch]
 
 With theta1, theta2, theta3 computed, one can apply the forward kinematics matrices for the first three joints. As a result, 
-```
+
 <sup>0</sup><sub>3</sub>R = T0_1[0:3, 0:3] * T1_2[0:3,0:3] * T2_3[0:3,0:3]
-```
+
 One can use the equation in Forward Kinematics section to derive the rotation from joint 3 to joint 6:
-```
+
 <sup>0</sup><sub>6</sub>R = <sup>0</sup><sub>3</sub>R * <sup>3</sup><sub>6</sub>R
-```
+
 Hence,
-```
+
 <sup>3</sup><sub>6</sub>R = (<sup>0</sup><sub>3</sub>R)<sup>T</sup> * <sup>0</sup><sub>6</sub>R 
-```
+
 Here, we use the fact that rotation matrix is orthonormal so its inverse is the transpose. Since we have numerical representation of the matrix, as well as the symbolic representation (expression below), we can associate the numerical value and corresponding expression to obtain remaining joint angles 
 
 ```
