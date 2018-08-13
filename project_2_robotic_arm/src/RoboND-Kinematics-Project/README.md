@@ -145,6 +145,11 @@ Note that `atan2` is used for the angles because it takes appropriate angle sign
 
 ![motion]
 
-By running the process couple more times, the kuka arm is able to complete the tasks 10/10. 
+By running the process couple more times, the kuka arm is able to complete the task with score 10/10. 
 
 ![result]
+
+### Future improvement
+1. Speed up the inverse kinematics computation
+2. Joint angle clipping
+3. Calculate and plot the error in end-effector pose
