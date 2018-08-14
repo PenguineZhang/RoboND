@@ -166,8 +166,8 @@ def test_code(test_case):
     b = acos((A*A + C*C - B*B)/(2*A*C))
 
     theta1 = (atan2(wrist[1],wrist[0]))
-    theta2 = pi/2 - a - atan2(wrist[2]-0.75, sqrt(wrist[0]**2 + wrist[1]**2)-0.35)
-    theta3 = pi/2 - (b + 0.036)
+    theta2 = np.pi/2 - a - atan2(wrist[2]-0.75, sqrt(wrist[0]**2 + wrist[1]**2)-0.35)
+    theta3 = np.pi/2 - (b + 0.036)
 
     R0_3 = ((T0_1 * T1_2 * T2_3)[:3,:3]).evalf(subs={q1:theta1, q2:theta2, q3:theta3})
     R3_6 = R0_3.inv(method='LU') * R_ee
@@ -176,7 +176,7 @@ def test_code(test_case):
     theta4 = atan2(R3_6[2,2], -R3_6[0,2])
     theta5 = atan2(sqrt(R3_6[0,2]**2 + R3_6[2,2]**2), R3_6[1,2])
     theta6 = atan2(-R3_6[1,1], R3_6[1,0])
-
+    print R3_6[:,2]
     # print theta1, theta2, theta3, theta4, theta5, theta6
     ## 
     ########################################################################################
@@ -245,6 +245,6 @@ def test_code(test_case):
 
 if __name__ == "__main__":
     # Change test case number for different scenarios
-    test_case_number = 3
+    test_case_number = 1
 
     test_code(test_cases[test_case_number])

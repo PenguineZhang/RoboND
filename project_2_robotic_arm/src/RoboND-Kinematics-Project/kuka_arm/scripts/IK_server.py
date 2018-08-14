@@ -19,35 +19,6 @@ from mpmath import *
 from sympy import *
 import numpy as np
 
-def clip_theta1(theta):
-	low = np.deg2rad(-185)
-	high = np.deg2rad(185)
-	return np.clip(theta, low, high)
-
-def clip_theta2(theta):
-	low = np.deg2rad(-45)
-	high = np.deg2rad(85)
-	return np.clip(theta, low, high)
-
-def clip_theta3(theta):
-	low = np.deg2rad(-210)
-	high = np.deg2rad(155-90)
-	return np.clip(theta, low, high)
-
-def clip_theta4(theta):
-	low = np.deg2rad(-350)
-	high = np.deg2rad(350)
-	return np.clip(theta, low, high)
-
-def clip_theta5(theta):
-	low = np.deg2rad(-125)
-	high = np.deg2rad(125)
-	return np.clip(theta, low, high)
-
-def clip_theta6(theta):
-	low = np.deg2rad(-350)
-	high = np.deg2rad(350)
-	return np.clip(theta, low, high)
 
 def euler2R(roll_x, pitch_y, yaw_z):
 	R_yaw_z = Matrix([[np.cos(yaw_z), -np.sin(yaw_z), 0],
@@ -160,17 +131,30 @@ def handle_calculate_IK(req):
 			R3_6 = R0_3.T * R_ee
 
 			# calculate the remaining joint angle, atan2 is used for angle disambiguity
-			x4 = -R3_6[0,2]
-			y4 = R3_6[2,2]
-			theta4 = (atan2(y4, x4))
+			# We will consider two cases:
+			# 1. theta5 is singular, meaning theta5 = 0
+			# R3_6[0,2] = R3_6[2,2] = R3_6[1,0] = R3_6[1,1] = 0 and R3_6[1,2] = 1
+			# R3_6[1,2] is used to determine if theta5 = 0 because that element only depends on theta5
+			if abs(1-R3_6[1,2]) < 1e-2:
+				theta5 = 0
+				
+				# theta4 = theta6 is chosen for convenience
+				theta4 = atan2(-R3_6[2,0], R3_6[0,0]) / 2
+				theta6 = theta4
 
-			x5 = R3_6[1,2]
-			y5 = sqrt(R3_6[0,2]**2 + R3_6[2,2]**2)
-			theta5 = (atan2(y5, x5))
+			# 2. theta5 != 0
+			else:
+				x4 = -R3_6[0,2]
+				y4 = R3_6[2,2]
+				theta4 = (atan2(y4, x4))
 
-			x6 = R3_6[1,0]
-			y6 = -R3_6[1,1] 
-			theta6 = (atan2(y6, x6))
+				x5 = R3_6[1,2]
+				y5 = sqrt(R3_6[0,2]**2 + R3_6[2,2]**2)
+				theta5 = (atan2(y5, x5))
+
+				x6 = R3_6[1,0]
+				y6 = -R3_6[1,1] 
+				theta6 = (atan2(y6, x6))
 
 			# Populate response for the IK request
 			# In the next line replace theta1,theta2...,theta6 by your joint angle variables
