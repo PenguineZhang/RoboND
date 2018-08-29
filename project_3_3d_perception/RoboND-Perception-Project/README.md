@@ -28,8 +28,8 @@ Because we only focus on the objects above the table, we apply passthrough filte
 ### Outlier rejection via RANSAC
 RANSAC algorithm is leveraged to fit a model to the data. The data close to the model within certain tolerance are classified as inliers, otherwise as outliers. In our case, we fit a plane to the point cloud after passthrough filtering to obtain the data point for the table. By toggling the parameter in the `cloud_filtered.extract()` function, we can also obtain the data points that represent the objects above the table.
 
-![Outliers][extracted_outliers]
-![Inliers][extracted_inliers]
+![Outliers: objects](extracted_outliers | width=24)
+![Inliers: table][extracted_inliers]
 
 
 1. Extract features and train an SVM model on new objects (see `pick_list_*.yaml` in `/pr2_robot/config/` for the list of models you'll be trying to identify). 
