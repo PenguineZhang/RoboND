@@ -28,7 +28,7 @@ Because we only focus on the objects above the table, we apply passthrough filte
 ### Outlier rejection via RANSAC
 RANSAC algorithm is leveraged to fit a model to the data. The data close to the model within certain tolerance are classified as inliers, otherwise as outliers. In our case, we fit a plane to the point cloud after passthrough filtering to obtain the data point for the table. By toggling the parameter in the `cloud_filtered.extract()` function, we can also obtain the data points that represent the objects above the table.
 
-<img align="left" width="40" src=extracted_inliers>
+<img align="left" width="40" src="./img/extracted_outliers.png">
 ![Inliers: table][extracted_inliers]
 
 
