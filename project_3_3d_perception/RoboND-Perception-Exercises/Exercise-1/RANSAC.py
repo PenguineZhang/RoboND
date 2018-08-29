@@ -56,8 +56,12 @@ inliers, coefficients = seg.segment()
 
 # Extract inliers
 extracted_inliers = cloud_filtered.extract(inliers, negative=False)
-filename = 'extracted_inliers.pcd'
+filename_in = 'extracted_inliers.pcd'
+
+extracted_outliers = cloud_filtered.extract(inliers, negative=True)
+filename_out = 'extracted_outliers.pcd'
 
 # Save pcd for table
-pcl.save(extracted_inliers, filename)
+pcl.save(extracted_inliers, filename_in)
+pcl.save(extracted_outliers, filename_out)
 print('success!')
