@@ -251,7 +251,7 @@ def pr2_mover(object_list):
             print "Service call failed: %s"%e
         
     # TODO: Output your request parameters into output yaml file
-    send_to_yaml('output_3_extra.yaml',dict_list) 
+   send_to_yaml('output_3_extra.yaml',dict_list) 
 
 
 if __name__ == '__main__':
@@ -270,7 +270,7 @@ if __name__ == '__main__':
     pcl_table_pub = rospy.Publisher('/pcl_table', PointCloud2, queue_size=1)
     pcl_cluster_pub = rospy.Publisher('/pcl_cluster', PointCloud2, queue_size=1)
     # TODO: Load Model From disk
-    model = pickle.load(open('model_3.sav', 'rb'))
+    model = pickle.load(open('model.sav', 'rb'))
     clf = model['classifier']
     encoder = LabelEncoder()
     encoder.classes_ = model['classes']
